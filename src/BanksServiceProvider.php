@@ -3,7 +3,6 @@
 namespace Bdwey\Banks;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Database\Eloquent\Relations\Relation;
 
 class BanksServiceProvider extends ServiceProvider
 {
@@ -18,11 +17,7 @@ class BanksServiceProvider extends ServiceProvider
             require __DIR__.'/routes.php';
         }
         $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
-        // $this->loadViewsFrom(__DIR__.'/Resources/views', 'Banks');
         $this->loadTranslationsFrom(__DIR__.'/Resources/lang', 'Banks');
-        $this->publishes([
-            __dir__ . '/Database/Seeds' => database_path('seeds')
-        ],'banks.seeds');
     }
 
     /**
@@ -32,6 +27,6 @@ class BanksServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->app->make('Bdwey\Banks\Http\BanksController');
+        //
     }
 }
