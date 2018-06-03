@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Bdwey\Banks\Http;
 
 use App\Http\Controllers\FrontendBaseController;
 use Illuminate\Http\Request;
