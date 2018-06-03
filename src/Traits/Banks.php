@@ -7,7 +7,7 @@ trait Banks
 {
     public function banks()
     {
-        return $this->hasMany(Model::class);
+        return $this->hasMany(Model::class, 'user_id', 'id');
     }
 
     public function hasBanks()

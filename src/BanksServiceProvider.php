@@ -27,6 +27,6 @@ class BanksServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->make('Bdwey\Banks\Http\BanksController');
     }
 }

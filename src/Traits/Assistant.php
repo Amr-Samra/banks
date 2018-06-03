@@ -11,7 +11,7 @@ trait Assistant
         foreach($users as $user) {
             if($user->bank_accounts) {
                 $user->banks()->create([
-                    'bank_name'         => 'اﻹفتراضي',
+                    'bank_name'         => 'Default',
                     'account_number'    => $user->bank_accounts,
                     'is_main'           => 1,
                     'is_active'         => 1,
